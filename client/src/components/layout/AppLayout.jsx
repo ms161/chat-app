@@ -8,19 +8,19 @@ import { useParams } from 'react-router-dom'
 import Profile from '../specific/Profile'
 
 const AppLayout = () => (WrappedComponent) => {
+   
     return (props) => {
         const params = useParams()
         const chatId = params.chatId
         const handleDeleteChat = (e, _id, isGroup) => {
             e.preventDefault()
-            console.log('Delete chat', _id, isGroup)
         }
         return (
             <>
                 <Title />
                 <Header />
                 <Grid container height={'calc(100vh - 4rem)'}>
-                    <Grid item size={{ sm: 4, md: 3 }} sx={{ display: { xs: 'none', sm: 'block' } }} height={'100%'}>
+                    <Grid item size={{ sm: 4, md: 3 }} sx={{ display: { xs: 'none', sm: 'block' } }} maxHeight={'calc(100vh - 4rem)'} overflow={'auto'}>
                         <ChatList
                             chatId={chatId}
                             chats={sampleChats}

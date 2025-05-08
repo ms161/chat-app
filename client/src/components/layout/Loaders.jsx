@@ -9,7 +9,7 @@ const LayoutLoader = () => {
         <Grid item size={{ xs: 12, sm: 8, md: 5, lg: 6 }} height={'100%'}>
           <Stack spacing={'1rem'}>
             {
-              Array.from({ length: 12 }).map((_, index) => (
+              Array.from({ length: 8 }).map((_, index) => (
                 <Skeleton key={index} variant='rectangular' height={'5rem'} />
               ))
             }

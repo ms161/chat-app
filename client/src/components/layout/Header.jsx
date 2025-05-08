@@ -11,7 +11,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { useNavigate } from 'react-router-dom';
 // import Search from '../specific/Search';
 const SearchDialog = lazy(() => import('../specific/Search'))
-const NewGroupDialog = lazy(() => import('../specific/NewGroupDialog'))
+const NewGroupDialog = lazy(() => import('../specific/NewGroup'))
 const NotificationsDialog = lazy(() => import('../specific/Notifications'))
 
 const Header = () => {

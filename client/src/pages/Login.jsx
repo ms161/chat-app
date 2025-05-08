@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { Container, Paper, TextField, Typography, Button, Stack, Avatar, IconButton } from '@mui/material'
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
-import { VisuallyHiddenInput } from '../components/styles/StyledComponents';
 import { useFileHandler, useInputValidation } from '6pp';
+import { VisuallyHiddenInput } from '../components/styles/StyledComponents';
 import { usernameValidator } from '../utils/validators';
 const Login = () => {
     const [isLogin, setIsLogin] = useState(true)
